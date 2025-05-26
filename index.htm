@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Park Cinema</title>
+        <link rel="stylesheet" href="css/input.css">
+        <link rel="stylesheet" href="css/output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body class="bg-[#373737] relative">
+        <header>
+            <div class="swiper h-[33vh] w-[93vw] md:h-[100vh] md:w-[99vw] md:top-0 md:left-0 md:right-0 right-1">
+                <nav class="flex md:absolute z-20">
+                    <img src="img/logo.png" alt="park cinema logo" class="md:ccontainer md:ml-20 md:mr-30 md:my-auto mx-auto my-7 w-[155px] h-[45px]">
+                    <div class="text-white hidden md:block">
+                        <div class="flex h-[80px] w-[72vw] items-center justify-between">
+                            <ul class="flex gap-15 items-center">
+                                <li><a href="">Kinoteatrlar</a></li>
+                                <li><a href="">Aksiyalar</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Əlaqə</a></li>
+                                <li><a href="">Profil</a></li>
+                            </ul>
+                            <select name="lang" id="lang">
+                                <option value="">AZE</option>
+                                <option value="">EN</option>
+                                <option value="">RU</option>
+                            </select>
+                        </div>
+                    </div>
+                </nav>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/overlay.png" alt="" class="absolute rounded-2xl md:rounded-none h-[33vh] w-[90vw] md:h-[100vh] md:w-[100vw] md:top-0 md:left-0 z-10 left-3">
+                        <img src="img/slide1.png" alt="" class="absolute rounded-2xl md:rounded-none h-[33vh] w-[90vw] md:h-[100vh] md:w-[100vw] md:top-0 md:left-0 left-3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/overlay.png" alt="" class="absolute rounded-2xl md:rounded-none h-[33vh] w-[90vw] md:h-[100vh] md:w-[100vw] md:top-0 md:left-0 z-10 left-3">
+                        <img src="img/slide2.png" alt="" class="absolute rounded-2xl md:rounded-none h-[33vh] w-[90vw] md:h-[100vh] md:w-[100vw] md:top-0 md:left-0 left-3">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </header>
+        <!-- zeynal -->
+        <main>
+            <div class="md:text-4xl text-2xl text-white flex justify-evenly my-10">
+                <p>Siyahı</p>
+                <p>Treylerlər</p>
+            </div>
+            <div class="text-gray-300 flex gap-5 text-xl justify-center md:ml-[5vw] md:justify-start">
+                <p class="text-white border-b-1 border-white">Hamısı</p>
+                <p>Tezliklə</p>
+                <p>Cədvəl</p>
+            </div>
+            <div class="text-white flex gap-5 text-center ccontainer py-8 flex-wrap md:flex-nowrap" >
+                <p class="border-b-1 border-white md:w-[30vw] pb-2 text-xl w-[41vw]">Dil</p>
+                <p class="border-b-1 border-white md:w-[30vw] pb-2 text-xl w-[41vw]">Kinoteatr</p>
+                <p class="border-b-1 border-white md:w-[30vw] pb-2 text-xl w-[90vw]">Bu gün</p>
+            </div>
+            <div id="cards-div" class="flex flex-col md:flex-row md:flex-wrap gap-5 md:mx-[3vw] mb-15"></div>
+        </main>
+        <!-- zeynal -->
+        <footer class="bg-[#86312a] text-white md:h-[35vh] h-[55vh] flex flex-col justify-evenly">
+            <div class="flex flex-wrap justify-between content-center ccontainer">
+                <img class="w-[175px] h-[50px]" src="img/logo.png" alt="logo">
+                <ul>
+                    <li class="my-2">Kinoteatrlar</li>
+                    <li class="my-2">Aksiyalar</li>
+                    <li class="my-2">FAQ</li>
+                </ul>
+                <ul>
+                    <li class="my-2">Profil</li>
+                    <li class="my-2">Əlaqə</li>
+                    <li class="my-2">Hüquqi Şərtlər</li>
+                </ul>
+                <div>
+                    Bizi izləyin
+                    <div class="text-2xl my-2">
+                        <i class="mx-2 fa-brands fa-instagram"></i>
+                        <i class="mx-2 fa-brands fa-facebook"></i>
+                        <i class="mx-2 fa-brands fa-youtube"></i>
+                        <i class="mx-2 fa-brands fa-telegram"></i>
+                        <i class="mx-2 fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+                <img src="img/visa.png" alt="visa" class="w-[50px] h-[40px]">
+            </div>
+            <div class="ccontainer flex justify-between">
+                <p>&copy; Park Cinema, 2025</p>
+                <p>ESAM Innovations</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
